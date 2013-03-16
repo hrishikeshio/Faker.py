@@ -3,8 +3,8 @@ Faker.py - Generate any amount of fake data for python
 
 Usage
 ======
-  import faker
-  random_name = faker.name.find_name() #" 'Darrin Schmitt'
+      import faker
+      random_name = faker.name.find_name() #" 'Darrin Schmitt'
 
 Installation
 
