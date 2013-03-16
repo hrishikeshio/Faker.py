@@ -2,6 +2,7 @@
 setup.py
 faker/__init__.py
 faker/address.py
+faker/cards.py
 faker/company.py
 faker/definitions.py
 faker/frandom.py

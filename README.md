@@ -4,8 +4,8 @@ Faker.py - Generate any amount of fake data for python
 Usage
 ======
 ```python
-import faker
-random_name = faker.name.find_name() #" 'Darrin Schmitt'
+from faker import name
+random_name = name.find_name() #" 'Darrin Schmitt'
 ```
 Installation
 
