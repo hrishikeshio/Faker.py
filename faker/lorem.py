@@ -1,13 +1,16 @@
-
+from faker import frandom
+from faker import helper
+from faker import definitions
+import random
 def words(num=False):
     if not num:
         num = 3
-    return helper.shuffle(definitions.lorem()).slice(0, num)
+    return helper.shuffle(definitions.lorem())[:num]
 
 def sentence(word_count=False):
     if not word_count:
         word_count = 3
-    return  words(word_count + helper.random_number(7)).join(' ').totitle()
+    return  " ".join(words(word_count + random.randint(0,7))).title()+"."
 
 
 def sentences(sentence_count=False):
@@ -16,7 +19,7 @@ def sentences(sentence_count=False):
     sentences=[] 
     for i in range(sentence_count):
         sentences.append(sentence())
-    return sentences.join("\n")
+    return " ".join(sentences)
 
 def paragraph(sentence_count=False):
     if not sentence_count:
@@ -29,4 +32,4 @@ def paragraphs(paragraph_count):
     paragraphs = []
     for i in range(paragraph_count):
         paragraphs.append(paragraph())
-    return paragraphs.join("\n \r\t")
+    return ("\n \r\t").join(paragraphs)

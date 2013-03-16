@@ -1,7 +1,7 @@
 import re
 import random
 def slugify(istring):
-    return re.sub(r'\W+','-',istring.lower())
+    return re.sub(r'\W+','.',istring.lower())
 
 # parses string for a symbol and replace it with a random number from 1-10
 def replace_symbol_with_number(istring, symbol=False):
@@ -18,7 +18,8 @@ def replace_symbol_with_number(istring, symbol=False):
 
 # takes an array and returns it randomized
 def shuffle(o):
-    return random.shuffle(o)
+    random.shuffle(o)
+    return o
 
 def create_card():
     return {

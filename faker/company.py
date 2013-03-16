@@ -1,11 +1,15 @@
+from faker import frandom
+from faker import helper
+from faker import name
+import random
 def suffixes():
     return ["Inc", "and Sons", "LLC", "Group", "and Daughters"]
 
-def company_name(format):
+def company_name(format=None):
     if format:
         r = format
     else:
-        r=random.randint(0,3)
+        r=random.randint(0,2)
         if r==0:
             return name.last_name() + " " + company_suffix()
         if r==1:
@@ -18,11 +22,7 @@ def company_suffix():
     
 
 def catch_phrase():
-    return frandom.catch_phrase_adjective() + " " +
-            frandom.catch_phrase_descriptor() + " " +
-            frandom.catch_phrase_noun()
+    return frandom.catch_phrase_adjective() + " " +frandom.catch_phrase_descriptor() + " " +frandom.catch_phrase_noun()
     
 def bs():
-        return frandom.bs_adjective() + " " +
-            frandom.bs_buzz() + " " +
-            frandom.bs_noun()
+        return frandom.bs_adjective() + " " + frandom.bs_buzz() + " " + frandom.bs_noun()

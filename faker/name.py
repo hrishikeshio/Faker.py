@@ -1,22 +1,20 @@
-import random as rand
-from frandom import first_name_
-from frandom import last_name_
-from frandom import name_prefix_
-from frandom import name_suffix_
+from faker import frandom
+from faker import helper
+import random
 def first_name():
 	""""""
-	return first_name_()
+	return frandom.first_name()
 
 def last_name():
 	""""""
-	return last_name_()
+	return frandom.last_name()
 
 def find_name():
 	""""""
-	r = rand.randint(0,10) 
+	r = random.randint(0,10) 
 	if r==0:
-		return name_prefix_() + " " + first_name() + " " + last_name()
+		return frandom.name_prefix() + " " + first_name() + " " + last_name()
 	elif r==1:
-		return first_name() + " " + last_name() + " " + name_suffix_()
+		return first_name() + " " + last_name() + " " + frandom.name_suffix()
     
 	return first_name() + " " + last_name()
