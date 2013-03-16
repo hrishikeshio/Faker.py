@@ -42,4 +42,27 @@ def name_prefix():
     
 def name_suffix():
 	return list_element(definitions.name_suffix())
+
+def catch_phrase_adjective():
+	return list_element(definitions.catch_phrase_adjective())
     
+def catch_phrase_descriptor():
+	return list_element(definitions.catch_phrase_descriptor())
+    
+def catch_phrase_noun():
+	return list_element(definitions.catch_phrase_noun())
+    
+def bs_adjective():
+	return list_element(definitions.bs_adjective())
+    
+def bs_buzz():
+	return list_element(definitions.bs_buzz())
+    
+def bs_noun():
+	return list_element(definitions.bs_noun())
+    
+def phone_formats():
+	return list_element(definitions.phone_formats())
+    
+def domain_suffix():
+	return list_element(definitions.domain_suffix())

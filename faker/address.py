@@ -3,7 +3,7 @@ from faker import helper
 import random
 
 def zip_code():
-	return helper.replace_symbol_with_number(frandom.array_element(["#####", '#####-####']))
+	return helper.replace_symbol_with_number(frandom.list_element(["#####", '#####-####']))
 
 def zip_code_format(format):
 	return helper.replace_symbol_with_number(["#####", '#####-####'],format)
@@ -41,7 +41,7 @@ def street_address(use_full_address=False):
 		return address
 
 def secondary_address():
-	return helper.replace_symbol_with_number(frandom.array_element(['Apt. ###','Suite ###']))
+	return helper.replace_symbol_with_number(frandom.list_element(['Apt. ###','Suite ###']))
 
 def br_state(use_abbr=False):
 	if use_abbr:
@@ -57,7 +57,7 @@ def uk_country():
     
 def us_state(use_abbr=False):
 	if use_abbr:
-		frandom.us_state_abbr()
+		return frandom.us_state_abbr()
 	else:
-		frandom.us_state()
+		return frandom.us_state()
     
