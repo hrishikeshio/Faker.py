@@ -22,8 +22,8 @@ Or clone the git repo and install from source
 
 ## Author
 #### Hrishikesh Huilgolkar
-Follow on twitter http://twitter.com/hrishikeshio
-My Blog http://blogicious.com
+Follow on twitter http://twitter.com/hrishikeshio <br/>
+My Blog http://blogicious.com <br/>
 Ported from javascript library Faker.js by Matthew Bergman & Marak Squires http://github.com/marak/Faker.js/
 <br/>
 Copyright (c) 2013 Hrishikesh Huilgolkar http://github.com/hrishikeshio/Faker.py/
